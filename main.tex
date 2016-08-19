@@ -14,6 +14,8 @@
 %\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
 %\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
 
+\usepackage{verbatim}
+
 % character encoding
 \usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
 %\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
@@ -54,17 +56,15 @@
 \makecvtitle
 
 \section{Education}
-\cventry{Anticipated 2012--2016}{Bachelor of Science in Computer Science}{Allegheny
-College}{Meadville, PA}{\textit{3.790}/\textit{4.000}}{Minor: Political Science}  % arguments 3 to 6 can be left empty
+\cventry{2016}{Bachelor of Science in Computer Science}{Allegheny
+College}{Meadville, PA}{\textit{3.798}/\textit{4.000}}{Minor: Political Science}  % arguments 3 to 6 can be left empty
 %\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
 
 \section{Undergraduate Thesis}
 \cvitem{Title}{\emph{Query-aware Search-based Schema Testing}}
 \cvitem{Supervisors}{Dr.\ Gregory M.\ Kapfhammer, Dr.\ Robert Roos}
-\cvitem{Description}{The results of automated testing tools are often
-difficult to interpret. The addition of query-awareness to test data generation
-  allows the user to specify relational database queries to serve as
-  tests, making it easier for the tester to find bugs in relational database schemas.}
+\cvitem{Description}{Generating test data for relational database queries increases the realism of
+	testing and is a step towards comprehensive testing of database dependent applications.}
 
   % Publications from a BibTeX file without multibib
 %  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
@@ -103,7 +103,7 @@ Detailed achievements:%
 \end{itemize}}
 
 \subsection{Teaching}
-\cventry{Fall 2014--Present}{Computer Science Tutor}{Allegheny
+\cventry{Fall 2014--Spring 2016}{Computer Science Tutor}{Allegheny
 College}{Meadville, PA}{}{Reinforce lab assignment content to computer science
 students during weekly drop-in hours.}
 \cventry{June 2015}{Instructor}{ILead PA, Professional
@@ -135,9 +135,11 @@ Detailed achievements:%
   \cvitem{Software}{Git, Eclipse, Vim, Linux, Windows}
 
 \section{Awards}
+  \cvitem{Best Senior Thesis Prize}{Departmental award for writing the best undergraduate thesis.}
+  \cvitem{Outstanding Senior Major}{Prize for achievement and contribution to the life of the department.}
   \cvitem{Certificate of Appreciation}{From the PA
   Department of Education for contributing to ILead.}
-  \cvitem{Alden Scholar}{(Dean's List) Fall 2012--Present.}
+  \cvitem{Alden Scholar}{(Dean's List) Fall 2012--Spring 2016.}
   \cvitem{Outstanding Junior Major}{Prize for the computer science
   junior major with the highest GPA.}
 
@@ -175,6 +177,7 @@ van routes.}
 % \clearpage
 % -----       letter       ---------------------------------------------------------
 % recipient data
+\begin{comment}
 \recipient{The University of Sheffield}{Western Bank, Sheffield,\\South Yorkshire S10 2TN, United Kingdom}
 \date{December 10, 2015}
 % \opening{Dear Sir or Madam,}
@@ -222,6 +225,7 @@ obtaining a PhD in computer science and pursuing a career as a research
 scientist. 
 
 \makeletterclosing
+\end{comment}
 
 %\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
 \end{document}
