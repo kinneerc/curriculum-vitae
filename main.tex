@@ -51,6 +51,25 @@
 %            content
 %----------------------------------------------------------------------------------
 \begin{document}
+\begin{comment}
+
+% -----       letter       ---------------------------------------------------------
+% recipient data
+\recipient{Sandia National Laboratories}{1515 Eubank SE\\ Albuquerque, NM 87123}
+\date{Feburary 21, 2017}
+\opening{Dear Sir or Madam,}
+\closing{Sincerely,}
+%\enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+\makelettertitle
+
+
+\makeletterclosing
+
+\clearpage
+%\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+
+\end{comment}
+
 %\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
 %-----       resume       ---------------------------------------------------------
 \makecvtitle
@@ -60,13 +79,15 @@
 \section{Education}
 \cventry{In Progress}{PhD Software Engineering}{Institute for Software Research, Carnegie Mellon University}{Pittsburgh, PA}{Advisors: Claire {Le Goues}, David Garlan}{}
 
+\cventry{2018}{Master of Science in Software Engineering}{Institute for Software Research, Carnegie Mellon University}{Pittsburgh, PA}{Advisors: Claire {Le Goues}, David Garlan}{}
+
 \cventry{2016}{Bachelor of Science in Computer Science}{Allegheny
 College}{Meadville, PA}{\textit{3.798}/\textit{4.000}}{Minor: Political Science}  % arguments 3 to 6 can be left empty
 %\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
 
 \section{Undergraduate Thesis}
 \cvitem{Title}{\emph{Query-aware Search-based Schema Testing}}
-\cvitem{Supervisors}{Dr.\ Gregory M.\ Kapfhammer, Dr.\ Robert Roos}
+\cvitem{Supervisors}{Gregory M.\ Kapfhammer, Robert Roos}
 \cvitem{Description}{Generating test data for relational database queries increases the realism of
 	testing and is a step towards comprehensive testing of database dependent applications.}
 
@@ -79,6 +100,14 @@ College}{Meadville, PA}{\textit{3.798}/\textit{4.000}}{Minor: Political Science}
 
 \section{Experience}
   \subsection{Research}
+
+  \cventry{Summer 2017}{Visiting Student Researcher, Sebastian J. I. Herzig}{Jet Propulsion Laboratory}{Pasadena, CA}{}{Architecture synthesis, design space exploration, and clustering}
+  %Detailed achievements:%
+\begin{itemize}%
+\item Developed techniques for clustering space mission architectures to enable design space exploration.
+\item Compared human intuition on architectural similarity to results of automated approaches.
+\item Delivered a presentation of results, submitted results to an international conference.
+\end{itemize}}
 
   \cventry{Summer 2015}{Cupper Scholar}{Allegheny
   College}{Meadville, PA}{}{Database testing, search-based test data
@@ -93,7 +122,7 @@ College}{Meadville, PA}{\textit{3.798}/\textit{4.000}}{Minor: Political Science}
   technical demonstration during poster session.
 \end{itemize}}
 
-  \cventry{Summer 2014}{NSF REU, Dr. Kristen Walcott-Justice}{University of Colorado Colorado Springs}{Colorado
+  \cventry{Summer 2014}{NSF REU, Kristen Walcott-Justice}{University of Colorado Colorado Springs}{Colorado
   Springs, CO}{}{Mobile application testing and machine learning%\newline{}%
 %Detailed achievements:%
 \begin{itemize}%
@@ -106,6 +135,7 @@ College}{Meadville, PA}{\textit{3.798}/\textit{4.000}}{Minor: Political Science}
 \end{itemize}}
 
 \subsection{Teaching}
+\cventry{Fall 2017}{Teaching Assistant}{Carnegie Mellon University}{Pittsburgh, PA}{Claire Le~Goues and Christian K{\"a}stner}{Led weekly recitations, graded assignments, and assisted students during office hours.}
 \cventry{June 2015,2016}{Instructor}{ILead PA, Professional
 Conference}{Harrisburg, PA}{}{Taught an
 interactive two hour class on embedded systems programming projects for libraries.}
@@ -113,7 +143,7 @@ interactive two hour class on embedded systems programming projects for librarie
 College}{Meadville, PA}{}{Reinforce lab assignment content to computer science
 students during weekly drop-in hours.}
 \cventry{Spring 2014}{Freshman Seminar Teaching Assistant}{Allegheny
-College}{Meadville, PA}{Dr.\ Howard Tamashiro}{Assisted transfer students with writing
+College}{Meadville, PA}{Howard Tamashiro}{Assisted transfer students with writing
 skills and adapting to life at Allegheny College.}
 
 \subsection{Vocational}
@@ -135,7 +165,7 @@ automate reports%\newline{}%
 
 \section{Skills}
   \cvdoubleitem{Languages: Experienced}{Java, \LaTeX, R}{Working knowledge}{Python, C, Perl}
-  \cvitem{Software}{Git, Eclipse, Vim, Linux, Windows}
+  \cvitem{Software}{Git, Eclipse, Vim, Linux, Windows, PRISM}
 
 \section{Awards}
   \cvitem{Best Senior Thesis Prize}{Departmental award for writing the best undergraduate thesis.}
@@ -156,17 +186,17 @@ automate reports%\newline{}%
 \cvitem{cv-counter}{Track the number of visitors moving through a doorway
 using computer vision.}
 \cvlistitem{\url{https://github.com/kinneerc/cv-counter}}
-\cvitem{giv-planner}{Uses Google APIs to plan college operated shuttle
-van routes.}
-\cvlistitem{\url{https://github.com/kinneerc/giv-planner}}
+%\cvitem{giv-planner}{Uses Google APIs to plan college operated shuttle
+%van routes.}
+%\cvlistitem{\url{https://github.com/kinneerc/giv-planner}}
 
-
+\begin{comment}
 \section{Contact}
   \cvdoubleitem{Mobile}{+1 (724) 261
   9615}{Email}{\href{mailto:ckinneer@cs.cmu.edu}{\nolinkurl{ckinneer@cs.cmu.edu} }}
   \cvdoubleitem{Website}{\url{kinneerc.github.io}}{GitHub}{\url{github.com/kinneerc}}
   \cvdoubleitem{Twitter}{\href{https://twitter.com/cbkinneer}{@cbkinneer}}{LinkedIn}{\url{linkedin.com/in/kinneerc}}
-
+  \end{comment}
 
 % Publications from a BibTeX file using the multibib package
 % \section{Publications}
@@ -178,59 +208,6 @@ van routes.}
 %\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
 
 % \clearpage
-% -----       letter       ---------------------------------------------------------
-% recipient data
-\begin{comment}
-\recipient{The University of Sheffield}{Western Bank, Sheffield,\\South Yorkshire S10 2TN, United Kingdom}
-\date{December 10, 2015}
-% \opening{Dear Sir or Madam,}
-% \closing{Yours faithfully,}
-% \enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
-\makelettertitle
-
-The ability to store and process large amounts of information has
-brought great benefits to society.  This ``big data'' enabled scientists
-to map the human genome, discover the Higgs boson, and manage international
-commerce.   While collecting this data has brought many benefits to
-society, it also comes with risks.  When critical systems such as air
-traffic control rely on the quality of data, incorrect data can have
-devastating consequences. As a computer science major, I am interested in ensuring that the
-software systems that we depend on are reliable.
-
-Since my sophomore year at Allegheny College, I have had the opportunity
-to collaborate with Dr.\ Phil McMinn at the University of Sheffield, in
-conjunction with my advisor Dr.\ Gregory Kapfhammer and their PhD student Chris Wright.
-While I was analyzing the data from my experiments, I realized that I
-was the first person in the world to know what the performance
-trade-offs looked like for search-based test data generation for
-database schemas. The excitement of discovery from this experience drove
-me to participate in a summer research experience for undergraduates
-(REU) program funded by the National Science Foundation. As part of this
-program, I traveled to the University of Colorado at Colorado Springs to
-use machine learning to evaluate the quality of test suites written for mobile applications. 
-
-My research has resulted in published papers and released software. This
-summer, I continued my collaboration with  Dr.\ McMinn, Dr.\ Kapfhammer
-and Chris Wright, and presented our paper titled “Automatically
-Evaluating the Efficiency of Search-based Test Data Generation for
-Relational Database Schemas” at the 27th International Conference on
-Software Engineering and Knowledge Engineering. Our software for
-conducting automatic scalability experiments is available on GitHub.
-
-This year I am continuing work in this broad area for my
-undergraduate thesis, which focusses on generating test data for
-database queries. I am also working on a continuation of our previous work
-which we hope to submit to the ACM Journal of Experimental Algorithmics.
-
-Upon graduating from Allegheny College, I would like to continue my education
-in the United Kingdom with Dr.\ McMinn as the next step towards my long-term goal of
-obtaining a PhD in computer science and pursuing a career as a research
-scientist. 
-
-\makeletterclosing
-\end{comment}
-
-%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
 \end{document}
 
 
